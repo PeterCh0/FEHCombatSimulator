@@ -1,0 +1,53 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  type: 
+  weaponType: MyString
+  moveType: MyString
+  weapon: MyString
+  assist: MyString
+  special: MyString
+  skillA: MyString
+  skillB: MyString
+  skillC: MyString
+  seal: MyString
+  legendaryEffect: MyString
+  blessingColor: MyString
+  bondRank: MyString
+  supportRank: MyString
+  supportPartner: MyString
+  hitpoints: 1
+  attack: 1
+  defense: 1
+  resistance: 1
+  speed: 1
+  spritePath: MyString
+  description: MyString
+  team: 1
+
+two:
+  name: MyString
+  type: 
+  weaponType: MyString
+  moveType: MyString
+  weapon: MyString
+  assist: MyString
+  special: MyString
+  skillA: MyString
+  skillB: MyString
+  skillC: MyString
+  seal: MyString
+  legendaryEffect: MyString
+  blessingColor: MyString
+  bondRank: MyString
+  supportRank: MyString
+  supportPartner: MyString
+  hitpoints: 1
+  attack: 1
+  defense: 1
+  resistance: 1
+  speed: 1
+  spritePath: MyString
+  description: MyString
+  team: 1

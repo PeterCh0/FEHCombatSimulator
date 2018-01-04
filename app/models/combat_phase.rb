@@ -1,0 +1,2 @@
+class CombatPhase < ApplicationRecord
+end
