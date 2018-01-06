@@ -1,21 +1,101 @@
-<%= form_with scope: :character, url: characters_url, local: true do |form| %>
+<%= stylesheet_link_tag "application" %>
 
-  <p>
-    <%= form.label :name %><br>
-    <%= form.text_field :name %>
-  </p>
+<div class = "row">
+  <div class = "column side"> <p> TODO: Terrain Column? </p> </div>
+  <div class = "column middle"> <p> TODO: Map Column </p> </div>  
+  <div class = "column side">
+    <%= form_with scope: :character, url: characters_url, local: true do |form| %>
+      <div id = "characterLogisticsRow">
+        <div id = "characterLogistics">
+          <p>
+            <%= form.label :Name %><br>
+            <%= form.text_field :name %>
+          </p>
+          <p>
+            <%= form.label "Move Type" %><br>
+            <%= form.collection_select :move_type_id, MoveType.all, :id, :name %>            
+          </p>
+        </div>
+        <div id = "characterLogistics">        
+          <p>
+            <%= form.label "Weapon Type" %><br>
+            <%= form.collection_select :weapon_type_id, WeaponType.all, :id, :name %>            
+          </p>
+          <p>
+            <%= form.label :Type %><br>
+            <%= form.collection_select :type_id, Type.all, :id, :name %>            
+          </p>
+        </div>
+      </div>
 
-  <p>
-    <%= form.label :weapon %><br>
-    <%= form.text_field :weapon_id %>
-  </p>
+      <div id = "characterSkillsRow">
+        <div id = "characterSkills">
+          <p>
+            <%= form.label :Weapon %><br>
+            <%= form.text_field :weapon_id %>
+          </p>
 
-  <p>
-    <%= form.submit %>
-  </p>
-  <% end %>  
+          <p>
+            <%= form.label :Assist %><br>
+            <%= form.text_field :assist_id %>
+          </p>
 
-  <table>
+          <p>
+            <%= form.label :Special %><br>
+            <%= form.text_field :special_id %>
+          </p>
+
+          <p>
+            <%= form.label :A %><br>
+            <%= form.text_field :skill_a_id %>
+          </p>
+
+          <p>
+            <%= form.label :B %><br>
+            <%= form.text_field :skill_b_id %>
+          </p>
+
+          <p>
+            <%= form.label :C %><br>
+            <%= form.text_field :skill_c_id %>
+          </p>
+
+          <p>
+            <%= form.label :Seal %><br>
+            <%= form.text_field :seal_id %>
+          </p>
+        </div>
+
+        <div id = "characterSkills">
+          <p>
+            <%= form.label :Atk %><br>
+            <%= form.text_field :attack %>
+          </p>
+
+          <p>
+            <%= form.label :Spd %><br>
+            <%= form.text_field :speed %>
+          </p>
+
+          <p>
+            <%= form.label :Def %><br>
+            <%= form.text_field :defense %>
+          </p>
+
+          <p>
+            <%= form.label :Res %><br>
+            <%= form.text_field :resistance %>
+          </p>
+        </div>
+      </div>
+      <p>
+        <%= form.submit %>
+      </p>
+    <% end %>  
+  </div>
+</div>
+
+<table>
   <tr>
     <th>Name</th>
     <th>Weapon</th>
@@ -24,7 +104,7 @@
   <% @characters.each do |character| %>
     <tr>
       <td><%= character.name %></td>
-      <td><%= character.weapon_id %></td>
+      <td><%= character.type_id %></td>
     </tr>
   <% end %>
 </table>
