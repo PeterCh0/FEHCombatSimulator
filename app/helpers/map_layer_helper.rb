@@ -1,2 +1,0 @@
-module MapLayerHelper
-end

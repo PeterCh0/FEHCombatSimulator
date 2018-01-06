@@ -34,6 +34,6 @@ WeaponType.create(name: 'dagger', description: '')
 WeaponType.create(name: 'breath', description: '')
 
 #Weapons
-Weapon.create(name: 'Iron Sword', might: 6, range: 1, phase: '', color: 'red', weaponType: 'sword', description: '')
-Weapon.create(name: 'Slaying Bow+', might: 12, range: 2, phase: 'passive', color: 'colorless', weaponType: 'bow', description: 'Effective against flying units. Accelerates Special trigger (cooldown count-1)')
+Weapon.create(name: 'Iron Sword', might: 6, range: 1, combat_phase_id: '', description: '')
+Weapon.create(name: 'Slaying Bow+', might: 12, range: 2, combat_phase_id: 'passive', description: 'Effective against flying units. Accelerates Special trigger (cooldown count-1)')
 

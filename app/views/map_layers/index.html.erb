@@ -1,0 +1,30 @@
+<%= form_with scope: :character, url: characters_url, local: true do |form| %>
+
+  <p>
+    <%= form.label :name %><br>
+    <%= form.text_field :name %>
+  </p>
+
+  <p>
+    <%= form.label :weapon %><br>
+    <%= form.text_field :weapon_id %>
+  </p>
+
+  <p>
+    <%= form.submit %>
+  </p>
+  <% end %>  
+
+  <table>
+  <tr>
+    <th>Name</th>
+    <th>Weapon</th>
+  </tr>
+
+  <% @characters.each do |character| %>
+    <tr>
+      <td><%= character.name %></td>
+      <td><%= character.weapon_id %></td>
+    </tr>
+  <% end %>
+</table>
