@@ -2,6 +2,25 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+ul.ui-autocomplete {
+  list-style: none;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  border: solid 1px #999;
+  cursor: default;
+  li {
+    border-top: solid 1px #999;
+    background-color: #FFF;
+    margin: 0;
+    padding: 0;
+    color: #000;
+    .ui-state-hover, .ui-state-active {
+      background-color: #FFFCB2;
+    }
+  }
+}
+
 .column {
   float: left;
 }

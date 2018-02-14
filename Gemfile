@@ -51,6 +51,8 @@ group :development do
   gem 'rails-pry'
   gem 'better_errors'
   gem 'binding_of_caller'
+  gem 'jquery-rails'
+  gem 'jquery-ui-rails'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
