@@ -10,7 +10,7 @@
         <div id = "characterLogistics">
           <p>
             <%= form.label :Name %><br>
-            <%= form.text_field :name %>
+            <%= form.text_field :name, value: "New Character" %>
           </p>
           <p>
             <%= form.label "Move Type" %><br>
@@ -33,27 +33,27 @@
         <div id = "characterSkills">
           <p>
             <%= form.label :weapon_name %><br>
-            <%= form.text_field :weapon_name, class: :weapon_name, data: {src: Weapon.order(:name).map(&:name)} %>
+            <%= form.text_field :weapon_name, value: Weapon.first().name, class: :weapon_name, data: {src: Weapon.order(:name).map(&:name)} %>
           </p>
           <p>
             <%= form.label :assist_name %><br>
-            <%= form.text_field :assist_name, class: :assist_name, data: {src: Assist.order(:name).map(&:name)} %>
+            <%= form.text_field :assist_name, value: Assist.first().name, class: :assist_name, data: {src: Assist.order(:name).map(&:name)} %>
           </p>
           <p>
             <%= form.label :special_name %><br>
-            <%= form.text_field :special_name, class: :special_name, data: {src: Special.order(:name).map(&:name)} %>
+            <%= form.text_field :special_name, value: Special.first().name, class: :special_name, data: {src: Special.order(:name).map(&:name)} %>
           </p>
           <p>
             <%= form.label :skill_a_name %><br>
-            <%= form.text_field :skill_a_name, class: :skill_a_name, data: {src: SkillA.order(:name).map(&:name)} %>
+            <%= form.text_field :skill_a_name, value: SkillA.first().name, class: :skill_a_name, data: {src: SkillA.order(:name).map(&:name)} %>
           </p>
           <p>
             <%= form.label :skill_b_name %><br>
-            <%= form.text_field :skill_b_name, class: :skill_b_name, data: {src: SkillB.order(:name).map(&:name)} %>
+            <%= form.text_field :skill_b_name, value: SkillB.first().name, class: :skill_b_name, data: {src: SkillB.order(:name).map(&:name)} %>
           </p>
           <p>
             <%= form.label :skill_c_name %><br>
-            <%= form.text_field :skill_c_name, class: :skill_c_name, data: {src: SkillC.order(:name).map(&:name)} %>
+            <%= form.text_field :skill_c_name, value: SkillC.first().name, class: :skill_c_name, data: {src: SkillC.order(:name).map(&:name)} %>
           </p>
 
           <p>
@@ -65,22 +65,22 @@
         <div id = "characterSkills">
           <p>
             <%= form.label :Atk %><br>
-            <%= form.text_field :attack %>
+            <%= form.text_field :attack, value: 0 %>
           </p>
 
           <p>
             <%= form.label :Spd %><br>
-            <%= form.text_field :speed %>
+            <%= form.text_field :speed, value: 0 %>
           </p>
 
           <p>
             <%= form.label :Def %><br>
-            <%= form.text_field :defense %>
+            <%= form.text_field :defense, value: 0 %>
           </p>
 
           <p>
             <%= form.label :Res %><br>
-            <%= form.text_field :resistance %>
+            <%= form.text_field :resistance, value: 0 %>
           </p>
         </div>
       </div>
