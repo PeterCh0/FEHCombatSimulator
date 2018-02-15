@@ -37,3 +37,27 @@ WeaponType.create(name: 'breath', description: '')
 Weapon.create(name: 'Iron Sword', might: 6, range: 1, combat_phase_id: '', description: '')
 Weapon.create(name: 'Slaying Bow+', might: 12, range: 2, combat_phase_id: 'passive', description: 'Effective against flying units. Accelerates Special trigger (cooldown count-1)')
 
+#Assists
+Assist.create(name: 'Assist 1', range: '1', description: '')
+Assist.create(name: 'Assist 2', range: '2', description: '')
+Assist.create(name: 'Assist 3', range: '3', description: '')
+
+#Specials
+Special.create(name: 'Special 1', description: '')
+Special.create(name: 'Special 2', description: '')
+Special.create(name: 'Special 3', description: '')
+
+#Skill_as
+SkillA.create(name: 'Skill A 1', level: 1, phase: '', description: '')
+SkillA.create(name: 'Skill A 2', level: 1, phase: '', description: '')
+SkillA.create(name: 'Skill A 3', level: 1, phase: '', description: '')
+
+#Skill_bs
+SkillB.create(name: 'Skill B 1', level: 1, phase: '', description: '')
+SkillB.create(name: 'Skill B 2', level: 1, phase: '', description: '')
+SkillB.create(name: 'Skill B 3', level: 1, phase: '', description: '')
+
+#Skill_cs
+SkillC.create(name: 'Skill C 1', level: 1, phase: '', description: '')
+SkillC.create(name: 'Skill C 2', level: 1, phase: '', description: '')
+SkillC.create(name: 'Skill C 3', level: 1, phase: '', description: '')

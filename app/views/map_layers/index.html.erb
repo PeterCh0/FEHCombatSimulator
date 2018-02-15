@@ -33,32 +33,27 @@
         <div id = "characterSkills">
           <p>
             <%= form.label :weapon_name %><br>
-            <%= form.text_field :weapon_name, class: :character_weapon_name, data: {src: Weapon.order(:name).map(&:name)} %>
+            <%= form.text_field :weapon_name, class: :weapon_name, data: {src: Weapon.order(:name).map(&:name)} %>
           </p>
-
           <p>
-            <%= form.label :Assist %><br>
-            <%= form.text_field :assist_id %>
+            <%= form.label :assist_name %><br>
+            <%= form.text_field :assist_name, class: :assist_name, data: {src: Assist.order(:name).map(&:name)} %>
           </p>
-
           <p>
-            <%= form.label :Special %><br>
-            <%= form.text_field :special_id %>
+            <%= form.label :special_name %><br>
+            <%= form.text_field :special_name, class: :special_name, data: {src: Special.order(:name).map(&:name)} %>
           </p>
-
           <p>
-            <%= form.label :A %><br>
-            <%= form.text_field :skill_a_id %>
+            <%= form.label :skill_a_name %><br>
+            <%= form.text_field :skill_a_name, class: :skill_a_name, data: {src: SkillA.order(:name).map(&:name)} %>
           </p>
-
           <p>
-            <%= form.label :B %><br>
-            <%= form.text_field :skill_b_id %>
+            <%= form.label :skill_b_name %><br>
+            <%= form.text_field :skill_b_name, class: :skill_b_name, data: {src: SkillB.order(:name).map(&:name)} %>
           </p>
-
           <p>
-            <%= form.label :C %><br>
-            <%= form.text_field :skill_c_id %>
+            <%= form.label :skill_c_name %><br>
+            <%= form.text_field :skill_c_name, class: :skill_c_name, data: {src: SkillC.order(:name).map(&:name)} %>
           </p>
 
           <p>
@@ -100,12 +95,24 @@
   <tr>
     <th>Name</th>
     <th>Weapon</th>
+    <th>Special</th>
+    <th>Assist</th>
+    <th>Skill A</th>
+    <th>Skill B</th>
+    <th>Skill C</th>
+    
   </tr>
 
   <% @characters.each do |character| %>
     <tr>
       <td><%= character.name %></td>
-      <td><%= character.type_id %></td>
+      <td><%= character.weapon_id %></td>
+      <td><%= character.special_id %></td>
+      <td><%= character.assist_id %></td>
+      <td><%= character.skill_a_id %></td>
+      <td><%= character.skill_b_id %></td>
+      <td><%= character.skill_c_id %></td>      
+      
     </tr>
   <% end %>
 </table>

@@ -1,12 +1,22 @@
 class Character < ApplicationRecord
-  has_one :weapon
-
   validates :name, presence: true
-  def weapon_name
-    weapon.try(:name)
-  end
 
   def weapon_name=(name)
-    self.weapon = Weapon.find_by_name(name) if name.present?
+    self.weapon_id = Weapon.find_by_name(name).id
+  end
+  def assist_name=(name)
+    self.assist_id = Assist.find_by_name(name).id
+  end
+  def special_name=(name)
+    self.special_id = Special.find_by_name(name).id
+  end
+  def skill_a_name=(name)
+    self.skill_a_id = SkillA.find_by_name(name).id
+  end
+  def skill_b_name=(name)
+    self.skill_b_id = SkillB.find_by_name(name).id
+  end
+  def skill_c_name=(name)
+    self.skill_c_id = SkillC.find_by_name(name).id
   end
 end

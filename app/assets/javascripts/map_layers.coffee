@@ -3,5 +3,21 @@
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
 jQuery ->
-  $('.character_weapon_name').autocomplete
-    source: $('.character_weapon_name').data('src')
+#autocomplete for character crud
+  $('.weapon_name').autocomplete
+    source: $('.weapon_name').data('src')
+
+  $('.assist_name').autocomplete
+    source: $('.assist_name').data('src')
+
+  $('.special_name').autocomplete
+    source: $('.special_name').data('src')
+
+  $('.skill_a_name').autocomplete
+    source: $('.skill_a_name').data('src')
+
+  $('.skill_b_name').autocomplete
+    source: $('.skill_b_name').data('src')
+
+  $('.skill_c_name').autocomplete
+    source: $('.skill_c_name').data('src')

@@ -50,7 +50,6 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'rails-pry'
   gem 'better_errors'
-  gem 'binding_of_caller'
   gem 'jquery-rails'
   gem 'jquery-ui-rails'
 end
