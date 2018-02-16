@@ -2,7 +2,7 @@ class CharactersController < ApplicationController
   def create
     @character = Character.new(character_params)
     if @character.save
-      redirect_to map_layers_index_url
+      redirect_to map_layers_index_url(:latestCharacterID => @character)
     end
   end
 

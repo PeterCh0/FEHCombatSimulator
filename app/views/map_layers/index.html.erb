@@ -2,9 +2,9 @@
 
 
 <div class = "row">
-  <div class = "column side"> <p> TODO: Terrain Column? </p> </div>
-  <div class = "column middle"> <p> TODO: Map Column </p> </div>  
-  <div class = "column side">
+  <div class = "column terrain"> <p> TODO: Terrain Column? </p> </div>
+  <div class = "column map"> <p> TODO: Map Column </p> </div>  
+  <div class = "column character">
     <%= form_with scope: :character, url: characters_url, local: true do |form| %>
       <div id = "characterLogisticsRow">
         <div id = "characterLogistics">
@@ -87,10 +87,18 @@
       <p>
         <%= form.submit %>
       </p>
-    <% end %>  
+    <% end %>
+
+    <% if @latestCharacter != nil %>
+      <p>
+        Created Character: 
+        <%= @latestCharacter.name %>
+      </p>
+    <% end %>
   </div>
 </div>
 
+<% if false %>
 <table>
   <tr>
     <th>Name</th>
@@ -115,4 +123,5 @@
       
     </tr>
   <% end %>
-</table>
+</table> 
+<% end %>

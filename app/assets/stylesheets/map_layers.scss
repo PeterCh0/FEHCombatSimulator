@@ -21,16 +21,25 @@ ul.ui-autocomplete {
   }
 }
 
+.ui-helper-hidden-accessible {
+  position: absolute; left:-999em;
+}
+
 .column {
   float: left;
 }
 
-.column.side {
+.column.character {
   width: 25%;
   align-content: center;
 }
 
-.column.middle {
+.column.terrain {
+  width: 25%;
+  align-content: center;
+}
+
+.column.map {
   width: 50%;
 }
 
