@@ -41,6 +41,7 @@ ul.ui-autocomplete {
 
 .column.map {
   width: 50%;
+  align-content: center;  
 }
 
 .row:after {
@@ -69,3 +70,40 @@ ul.ui-autocomplete {
   float: left;
 }
 
+// .mapRow {
+//   align-content: center;
+// }
+
+td {
+  padding: 0; margin: 0;  
+  
+}
+
+#tile {
+  padding: 0; margin: 0;
+}
+
+.tileImage {
+  width: 80px;
+  height: 80px;
+  padding: 0; margin: 0;  
+  display: block;
+  opacity: 0.8;
+}
+
+tr {
+  padding: 0; margin: 0;  
+  
+}
+
+#map {
+  margin: auto;
+  align-content: center;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.createdCharacterImage {
+  width: 80px;
+  height: 80px;
+}

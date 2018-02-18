@@ -1,5 +1,6 @@
 class MapLayersController < ApplicationController
   def index
+    @map = Map.new
     @character = Character.new
     @characters = Character.all
     @types = Type.all
