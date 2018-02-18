@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  tile_type_id: 
+  contained_character_id: 
+  sprite_path: MyString
+
+two:
+  tile_type_id: 
+  contained_character_id: 
+  sprite_path: MyString

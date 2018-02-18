@@ -61,3 +61,13 @@ SkillB.create(name: 'Skill B 3', level: 1, phase: '', description: '')
 SkillC.create(name: 'Skill C 1', level: 1, phase: '', description: '')
 SkillC.create(name: 'Skill C 2', level: 1, phase: '', description: '')
 SkillC.create(name: 'Skill C 3', level: 1, phase: '', description: '')
+
+#TileTypes
+TileType.create(name: 'normal', description: '')
+TileType.create(name: 'forest', description: '')
+TileType.create(name: 'mountain', description: '')
+TileType.create(name: 'water', description: '')
+TileType.create(name: 'wall', description: '')
+TileType.create(name: 'defensive', description: '')
+TileType.create(name: 'trench', description: '')
+

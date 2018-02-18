@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180215001504) do
+ActiveRecord::Schema.define(version: 20180218001940) do
 
   create_table "assists", force: :cascade do |t|
     t.string "name"
@@ -52,6 +52,63 @@ ActiveRecord::Schema.define(version: 20180215001504) do
   create_table "combat_phases", force: :cascade do |t|
     t.string "phase"
     t.string "description"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "maps", force: :cascade do |t|
+    t.string "name"
+    t.string "username"
+    t.string "description"
+    t.string "history"
+    t.integer "tile11"
+    t.integer "tile12"
+    t.integer "tile13"
+    t.integer "tile14"
+    t.integer "tile15"
+    t.integer "tile16"
+    t.integer "tile21"
+    t.integer "tile22"
+    t.integer "tile23"
+    t.integer "tile24"
+    t.integer "tile25"
+    t.integer "tile26"
+    t.integer "tile31"
+    t.integer "tile32"
+    t.integer "tile33"
+    t.integer "tile34"
+    t.integer "tile35"
+    t.integer "tile36"
+    t.integer "tile41"
+    t.integer "tile42"
+    t.integer "tile43"
+    t.integer "tile44"
+    t.integer "tile45"
+    t.integer "tile46"
+    t.integer "tile51"
+    t.integer "tile52"
+    t.integer "tile53"
+    t.integer "tile54"
+    t.integer "tile55"
+    t.integer "tile56"
+    t.integer "tile61"
+    t.integer "tile62"
+    t.integer "tile63"
+    t.integer "tile64"
+    t.integer "tile65"
+    t.integer "tile66"
+    t.integer "tile71"
+    t.integer "tile72"
+    t.integer "tile73"
+    t.integer "tile74"
+    t.integer "tile75"
+    t.integer "tile76"
+    t.integer "tile81"
+    t.integer "tile82"
+    t.integer "tile83"
+    t.integer "tile84"
+    t.integer "tile85"
+    t.integer "tile86"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -102,6 +159,21 @@ ActiveRecord::Schema.define(version: 20180215001504) do
   create_table "specials", force: :cascade do |t|
     t.string "name"
     t.string "description"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "tile_types", force: :cascade do |t|
+    t.string "name"
+    t.string "description"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "tiles", force: :cascade do |t|
+    t.integer "tile_type_id"
+    t.integer "contained_character_id"
+    t.string "sprite_path"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

@@ -3,7 +3,9 @@
 
 <div class = "row">
   <div class = "column terrain"> <p> TODO: Terrain Column? </p> </div>
-  <div class = "column map"> <p> TODO: Map Column </p> </div>  
+  <div class = "column map"> <p> TODO: Map Column </p>
+    <%= image_tag "tiles/normal.png" %>
+  </div>  
   <div class = "column character">
     <%= form_with scope: :character, url: characters_url, local: true do |form| %>
       <div id = "characterLogisticsRow">
