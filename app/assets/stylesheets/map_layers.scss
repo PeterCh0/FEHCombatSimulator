@@ -70,10 +70,6 @@ ul.ui-autocomplete {
   float: left;
 }
 
-// .mapRow {
-//   align-content: center;
-// }
-
 td {
   padding: 0; margin: 0;  
   
@@ -84,8 +80,8 @@ td {
 }
 
 .tileImage {
-  width: 80px;
-  height: 80px;
+  width: 6vw;
+  height: 6vw;
   padding: 0; margin: 0;  
   display: block;
   opacity: 0.8;
@@ -104,6 +100,8 @@ tr {
 }
 
 .createdCharacterImage {
-  width: 80px;
-  height: 80px;
+  display: block;
+  width: 8vw;
+  height: 8vw;
+  padding: 0; margin: 0;    
 }
