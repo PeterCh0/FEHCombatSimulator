@@ -41,7 +41,6 @@ ul.ui-autocomplete {
 
 .column.map {
   width: 50%;
-  align-content: center;  
 }
 
 .row:after {
@@ -75,11 +74,14 @@ td {
   
 }
 
-#tile {
+.tile {
+  position: relative;  
   padding: 0; margin: 0;
+  align-items: flex-start;
 }
 
 .tileImage {
+  position: relative;
   width: 6vw;
   height: 6vw;
   padding: 0; margin: 0;  
@@ -99,7 +101,8 @@ tr {
   border-spacing: 0;
 }
 
-.createdCharacterImage {
+.characterImage {
+  position: absolute;
   display: block;
   width: 8vw;
   height: 8vw;
